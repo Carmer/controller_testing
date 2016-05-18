@@ -20,6 +20,6 @@ require APP_ROOT.join('config', 'database')
   class ToDo < Sinatra::Base
     set :method_override, true
     set :root, APP_ROOT.to_path
-    set :views, File.join(ToDo::Server.root, "app", "views")
-    set :public_folder, File.join(ToDo::Server.root, "app", "public")
+    set :views, File.join(ToDo.root, "app", "views")
+    set :public_folder, File.join(ToDo.root, "app", "public")
   end

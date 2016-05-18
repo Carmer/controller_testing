@@ -1,13 +1,13 @@
 # specify which database and adapter to use for which environment
 
 development:
-  adapter: postgresql
+  adapter: sqlite3 
   database: to-do-app-development
 
 test:
-  adapter: postgresql
+  adapter: sqlite3 
   database: to-do-app-test
 
 production:
-  adapter: postgresql
+  adapter: sqlite3 
   database: to-do-app-production

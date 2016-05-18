@@ -1,14 +1,19 @@
 class ToDoApp < Sinatra::Base
 
-  post '/item' do
+  post '/items' do
     item = Item.new(params[:item])
     if item.save
-      status = 200
-      body = "Item created"
+      response.status = 200
+      response.body = "Item created"
     else
-      status = 400
-      body = item.errors.full_messages.join(", ")
+      response.status = 400
+      response.body = item.errors.full_messages.join(", ")
     end
+  end
+
+  get '/items' do
+    response.body = Item.all.to_json
+    response.status = 200
   end
 
 
