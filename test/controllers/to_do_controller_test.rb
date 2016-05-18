@@ -15,7 +15,7 @@ class ToDoControllerTest < Minitest::Test
     #Send a GET request to the '/items' endpoint
     #Assert that the created items are returned in the body
     #Assert that the controller responds with a status of 200
-  end
+  end 
 
 
   def test_the_application_can_not_create_an_item_without_a_description
