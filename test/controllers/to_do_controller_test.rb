@@ -7,15 +7,15 @@ class ToDoControllerTest < Minitest::Test
 # ================================================================================
 
   def test_the_application_can_create_an_item
-    # Send a POST request to '/items' endpoint that creates a new to-do item
+    # Send a POST request to '/items' endpoint that creates a new item
     # with a title of 'Learn to test controllers' and a description 'This is great'
     # Assert that the controller responds with a status of 200
-    # Assert that the controller responds with a body of 'List-item created'
+    # Assert that the controller responds with a body of 'Item created'
     # Assert that the ToDo table has an item in it
   end
 
   def test_the_application_returns_all_items
-    #Create multiple list-items
+    #Create multiple items
     #Send a GET request to the '/items' endpoint
     #Assert that the created items are returned in the body
     #Assert that the controller responds with a status of 200
@@ -46,7 +46,7 @@ class ToDoControllerTest < Minitest::Test
     #Create an item to test
     #Send a PUT request to '/items/:id' that will update the item's title
     #Assert that the controller responds with a status of 200
-    #Assert that the controller responds with a body of 'List-item updated'
+    #Assert that the controller responds with a body of 'Item updated'
     #Assert that the item's title is the updated title and not the original title.
   end
 
